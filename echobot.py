@@ -26,6 +26,7 @@ image = Image.debian_slim().pip_install(*REQUIREMENTS)
 stub = Stub("echobot-poe")
 
 
+
 @stub.function(image=image)
 @asgi_app()
 def fastapi_app():
